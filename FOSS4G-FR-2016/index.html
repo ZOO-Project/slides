@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>ZOO-Project-1.6.0 | Nouveautés de la plateforme WPS libre | FOSS4G-FR 2016</title>
+  <meta content="ZOO Project presentation at FOSS4G-FR 2016" name=
+  "description">
+  <meta content="Gérald FENOY" name="author">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black-translucent" name=
+  "apple-mobile-web-app-status-bar-style">
+  <meta content=
+  "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  name="viewport">
+  <link href="../assets/css/bootstrap.css" rel="stylesheet">
+  <link href="../assets/css/reveal.min.css" rel="stylesheet">
+  <link href="../assets/css/theme/beige2016.css" id="theme" rel="stylesheet">
+  <!-- <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>-->
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+
+  <script>
+        if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+  </script><!--[if lt IE 9]>
+        <script src="../assets/lib/js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+  <a class="event" href="http://2015.foss4g.org/" target=
+  "_blank"><img class="img-thumbnail" height="160" src=
+  "./../assets/img/logo-blanc2.png" width="250"></a> <a class="osgeo" href=
+  "http://osgeo.org" target="_blank"><img height="65" src="../assets/img/osgeo-logo.png"
+  width="150"></a> <a class="pm" href="http://publicmaundi.eu" target=
+  "_blank"><img height="51" src="../assets/img/logo-publicamundi.png" width="200"></a>
+  <a class="zoow" href="http://zoo-project.org" target=
+  "_blank">http://zoo-project.org</a>
+
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>ZOO-Project</h1>
+
+
+        <h3>Nouveautés de la plateforme WPS libre</h3>
+        <img src="../assets/img/zoo-landscape2.png">
+
+        <ul class="auth">
+          <li><b>Gérald FENOY - <a href="http://geolabs.fr">GeoLabs</a></b>
+          </li>
+
+
+          <li class="co">Nicolas BOZON - <a href="http://esri.fr">ESRI France</a>
+          </li>
+
+
+          <li class="co">Venkatesh RAGHAVAN - <a href="http://www.osaka-cu.ac.jp/">OCU</a>
+          </li>
+        </ul>
+      </section>
+
+
+
+      <section data-background-transition="slide">
+        <h2>Une introduction au ZOO-Project</h2>
+        <br>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+          <p class="page"><a class="reference external" href=
+          "http://zoo-project.org" target="_blank">ZOO-Project</a> est
+          une impl&eacute;mentation du Web Processing Service (WPS)
+          &eacute;crite en C. C'est une plateforme OpenSource,
+          distribu&eacute;e sous licence MIT/X11, qui
+          impl&eacute;mente les version 1.0.0 et 2.0 de la norme
+          <a class="reference external" href=
+          "http://www.opengeospatial.org/standards/wps/" target="_bank">WPS</a>
+          fournie par l'<a class="reference external" href=
+          "http://www.opengeospatial.org/" target="_blank">OGC</a></p>
+          <br>
+
+
+          <p class="page">Le ZOO-Project fournit un environement de
+          d&eacute;veloppement permettant de cr&eacute;er et chaîner
+          des services web conformes au WPS. Son objectif principal
+          est de fournir des m&eacute;thodes g&eacute;n&eacute;riques
+          et standards pour r&eacute;utiliser les librairies OpenSource
+          disponibles sous la forme de services WPS.</p>
+        </div>
+      </section>
+
+
+      <section data-background-transition="slide">
+        <h2>L'histoire du ZOO-Project</h2>
+        <br>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center"><img class=
+        "img-responsive" height="300" src="../assets/img/zoo-monkeys.jpg">
+        </div>
+
+
+        <div class="col-xs-12 col-sm-8 col-lg-8 text-center">
+          <p class="page">L'id&eacute;e du ZOO au <a href="http://2008.foss4g.org">FOSS4G
+          2008</a></p>
+
+
+          <p class="page">Premi&egrave;re pr&eacute;sentation du ZOO <a href=
+          "http://2009.foss4g.org">FOSS4G 2009</a></p>
+
+
+          <p class="page">Premi&egrave;re version ZOO-Project 1.0 <a href=
+          "http://2010.foss4g.org">FOSS4G 2010</a></p>
+
+
+          <p class="page">Version ZOO-Project 1.1 au <a href=
+          "http://2011.foss4g.org">FOSS4G 2011</a></p>
+
+
+          <p class="page">ZOO-Project 1.2 entre en incubation &agrave;
+          l'<a href=
+          "http://osgeo.org">OSGeo</a> en 2012</p>
+
+
+          <p class="page">Version ZOO-Project 1.3 au <a href=
+          "http://2013.foss4g.org">FOSS4G 2013</a></p>
+
+
+          <p class="page">Version ZOO-Project 1.4 au <a href=
+          "http://2014.foss4g.org">FOSS4G 2014</a></p>
+
+
+	  <p class="page">Version ZOO-Project 1.5 en juillet 2015</p>
+        </div>
+      </section>
+
+
+      <section data-background-transition="slide">
+        <h2>La tribu ZOO</h2>
+        <br>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-6 col-lg-6 text-center"><img src=
+        "../assets/img/100002010000032000000258508982B9.png">
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-lg-6 text-center">
+          <p class="page">Conseil Tribal ZOO<br>
+          (<a href="http://zoo-project.org/ZOO%20Tribe">Commit&eacute;
+          de pilotage du projet</a>)</p>
+
+
+          <p class="page">Les gardiens du ZOO<br>
+          (<a
+          href="http://zoo-project.org/ZOO%20Tribe">D&eacute;veloppeurs
+          officiels</a>)</p>
+
+
+          <p class="page">ZOO Visitors<br>
+          (Utilisateurs et d&eacute;veloppeurs)</p>
+
+
+          <p class="page">ZOO Animals<br>
+          (librairies FOSS4G & FOSS)</p>
+        </div>
+      </section>
+
+
+      <section>
+        <h2>Le Conseil Tribal du ZOO (PSC)</h2>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+          <table class="table table-condensed trvl">
+            <thead>
+              <tr>
+                <th>Pr&eacute;nom</th>
+
+                <th>Nom</th>
+
+                <th>Organisation</th>
+
+                <th>Pays</th>
+              </tr>
+            </thead>
+
+
+            <tbody>
+              <tr>
+                <td>Nicolas</td>
+
+                <td>BOZON</td>
+
+                <td>
+                  <a href="http://esri.fr" target="_blank">ESRI France</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/fr.png">
+                <span class="hidden-xs">FRANCE</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Maria</td>
+
+                <td>BROVELLI</td>
+
+                <td>
+                  <a href="http://polimi.it" target="_blank">Politecnico di
+                  Milano</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/it.png">
+                <span class="hidden-xs">ITALY</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Massimilano</td>
+
+                <td>CANNATA</td>
+
+                <td>
+                  <a href="http://supsi.ch" target="_blank">SUPSI</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/it.png">
+                <span class="hidden-xs">ITALY</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Gérald</td>
+
+                <td>FENOY</td>
+
+                <td>
+                  <a href="http://geolabs.fr" target="_blank">GeoLabs</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/fr.png">
+                <span class="hidden-xs">FRANCE</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Hirofumi</td>
+
+                <td>HAYASHI</td>
+
+                <td>
+                  <a href="http://www.apptec.co.jp/" target="_blank">Applied
+                  Technologies</a>
+                </td>
+
+                <td><img src=
+                "http://zoo-project.org/img/flags/jp.png"><span class=
+                "hidden-xs">JAPAN</span>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>Daniel</td>
+
+                <td>KASTL</td>
+
+                <td>
+                  <a href="http://georepublic.de/en/" target=
+                  "_blank">GeoRepublic</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/de.png">
+                <span class="hidden-xs">GERMANY</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Jeff</td>
+
+                <td>McKENNA</td>
+
+                <td>
+                  <a href="http://www.gatewaygeomatics.com/" target=
+                  "_blank">Gateway Geomatics</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/ca.png">
+                <span class="hidden-xs">CANADA</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Markus</td>
+
+                <td>NETELER</td>
+
+                <td>
+                  <a href="http://www.mundialis.de/" target="_blank">Mundialis</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/it.png">
+                <span class="hidden-xs">ITALY</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Venkatesh</td>
+
+                <td>RAGHAVAN</td>
+
+                <td>
+                  <a href="http://www.osaka-cu.ac.jp/ja" target="_blank">Osaka
+                  City University</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/jp.png">
+                <span class="hidden-xs">JAPAN</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Angelos</td>
+
+                <td>TZOTSOS</td>
+
+                <td>
+                  <a href="http://www.ntua.gr/" target="_blank">National
+                  Technical University of Athens</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/gr.png">
+                <span class="hidden-xs">GREECE</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section>
+        <h2>Les gardiens du ZOO (D&eacute;v.)</h2>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+          <table class="table tabled table-condensed trvl">
+            <thead>
+              <tr>
+                <th>Pr&eacute;nom</th>
+
+                <th>Nom</th>
+
+                <th>Organisation</th>
+
+                <th>Pays</th>
+              </tr>
+            </thead>
+
+
+            <tbody>
+              <tr>
+                <td>Nicolas</td>
+
+                <td>BOZON</td>
+
+                <td>
+                  <a href="http://esri.fr" target="_blank">ESRI France</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/fr.png">
+                <span class="hidden-xs">FRANCE</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Trevor</td>
+
+                <td>CLARKE</td>
+
+                <td>
+                  <a href="http://www.ballaerospace.com/" target="_blank">Ball
+                  Aerospace</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/us.png">
+                <span class="hidden-xs">USA</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Luca</td>
+
+                <td>DELUCCHI</td>
+
+                <td>
+                  <a href="http://www.fmach.it/" target="_blank">Fondazione
+                  Edmund Mach</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/it.png">
+                <span class="hidden-xs">ITALY</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Gérald</td>
+
+                <td>FENOY</td>
+
+                <td>
+                  <a href="http://geolabs.fr" target="_blank">GeoLabs</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/fr.png">
+                <span class="hidden-xs">FRANCE</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Knut</td>
+
+                <td>LANDMARK</td>
+
+                <td>
+                  <a href="http://www.ffi.no/en/Sider/default.aspx" target=
+                  "_blank">Norwegian Defence Research</a>
+                </td>
+
+                <td><img src="http:/zoo-project.org/img/flags/no.png">
+                <span class="hidden-xs">NORWAY</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Jeff</td>
+
+                <td>McKENNA</td>
+
+                <td>
+                  <a href="http://www.gatewaygeomatics.com/" target=
+                  "_blank">Gateway Geomatics</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/ca.png">
+                <span class="hidden-xs">CANADA</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Marco</td>
+
+                <td>NEGRETTI</td>
+
+                <td>
+                  <a href="http://polimi.it" target="_blank">Politecnico di
+                  Milano</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/it.png">
+                <span class="hidden-xs">ITALY</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Markus</td>
+
+                <td>NETELER</td>
+
+                <td>
+                  <a href="http://www.fmach.it/" target="_blank">Fondazione
+                  Edmund Mach</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/it.png">
+                <span class="hidden-xs">ITALY</span></td>
+              </tr>
+
+
+              <tr>
+                <td>David</td>
+
+                <td>SAGGIORATO</td>
+
+                <td>
+                  <a href="#" target="_blank">Cleolys</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/fr.png">
+                <span class="hidden-xs">FRANCE</span></td>
+              </tr>
+
+
+              <tr>
+                <td>Angelos</td>
+
+                <td>TZOTSOS</td>
+
+                <td>
+                  <a href="http://www.ntua.gr/" target="_blank">National
+                  Technical University of Athens</a>
+                </td>
+
+                <td><img src="http://zoo-project.org/img/flags/gr.png">
+                <span class="hidden-xs">GREECE</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+<section>
+<h2>Les supports du ZOO</h2>
+<img src="../assets/img/pp.jpg" height="100"/>
+<h3>Partenaires &eacute;ducation
+<br/>
+<table>
+  <tr>
+    <td style="width:100px;">&nbsp;</td>
+    <td><img
+      src="http://www.zoo-project.org/trac/chrome/site/img/ocu-logo.png"
+      style="width:250px;"/></td>
+    <td><img
+      src="http://www.zoo-project.org/trac/chrome/site/img/fem-logo.png"
+      style="width:250px;"/></td>
+    <td><img
+      src="http://www.zoo-project.org/trac/chrome/site/img/polimi-logo.png"
+      style="width:250px;"/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><img
+      src="http://www.zoo-project.org/trac/chrome/site/img/supsi-logo.png"
+      style="width:250px;"/></td>
+    <td><img
+      src="http://www.zoo-project.org/trac/chrome/site/img/gucas-logo.png"
+      style="width:250px;"/><!--<img
+      src="http://www.zoo-project.org/trac/chrome/site/img/cumtb-logo.png"
+      style="width:250px;"/> --> </td>
+    <td><img
+      src="../assets/img/nu_logo.png"
+      style="width:150px;"/></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</section>
+	
+
+      <section data-background-transition="slide">
+        <h2>Participez !</h2>
+        <br>
+
+
+        <h4><i class="fa fa-code"></i>Parlez &agrave; la tibu du ZOO</h4>
+
+
+        <ul class="list-page">
+          <li>Listes de diffusions OSGeo</li>
+
+
+          <li>IRC</li>
+        </ul>
+
+
+        <h4><i class="fa fa-code"></i> Contribuez au code</h4>
+
+
+        <ul class="list-page">
+          <li>Bug tracking</li>
+
+
+          <li>Support des Langues naturelles</li>
+
+
+          <li>Nouveaux services WPS</li>
+</ul>
+
+            <h4><i class="fa fa-book"></i> Contribuez &agrave; la documentation</h4>
+
+            <ul class="list-page">
+              <li>Am&eacute;lioration et corrections</li>
+              <li>Traduction (Transifex)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+
+      <section data-background-transition="slide">
+        <h2>Platforme WPS Ouverte</h2>
+        <br>
+
+
+        <div class="row btm">
+          <div class="col-xs-12 col-sm-3 col-lg-3 text-center">
+            <ul class="ch-grid">
+              <li>
+                <a class="ch-item ch-img-1" href=
+                "http://zoo-project.org/docs/kernel/">
+                <div class="ch-info-wrap ch-info-wrap-1">
+                  <div class="ch-info">
+                    <div class="ch-info-front ch-img-1">
+                    </div>
+
+
+                    <div class="ch-info-back ch-info-back-1">
+                    </div>
+                  </div>
+                </div></a>
+              </li>
+            </ul>
+
+
+            <h4>Serveur WPS</h4>
+
+
+            <p class="int">Le <a href=
+            "http://zoo-project.org/docs/kernel/">ZOO-Kernel</a> est
+            un puissant noyau impl&eacute;ment&eacute; en C capable de
+            charger dynamiquement des services et de les chainer ensemble.</p>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-3 col-lg-3 text-center">
+            <ul class="ch-grid">
+              <li>
+                <a class="ch-item ch-img-2" href="/docs/services/">
+                <div class="ch-info-wrap ch-info-wrap-2">
+                  <div class="ch-info">
+                    <div class="ch-info-front ch-img-2">
+                    </div>
+                  </div>
+                </div></a>
+              </li>
+            </ul>
+
+
+            <h4>Services WPS</h4>
+
+
+            <p class="int">Les <a href=
+            "http://zoo-project.org/docs/services/">ZOO-Services</a>
+            sont une collection de services WPS prêts &agrave; l'emploi
+            et bas&eacute;s sur des librairies existantes.</p>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-3 col-lg-3 text-center">
+            <ul class="ch-grid">
+              <li>
+                <a class="ch-item ch-img-3" href="/docs/api/">
+                <div class="ch-info-wrap ch-info-wrap-3">
+                  <div class="ch-info">
+                    <div class="ch-info-front ch-img-3">
+                    </div>
+                  </div>
+                </div></a>
+              </li>
+            </ul>
+
+
+            <h4>API WPS</h4>
+
+
+            <p class="int">La <a href=
+            "http://zoo-project.org/docs/api/">ZOO-API</a> est une API
+            JavaScript permettant de cr&eacute;er de nouveaux services
+            ou de chainer des services existants (+logique!).</p>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-3 col-lg-3 text-center">
+            <ul class="ch-grid">
+              <li>
+                <a class="ch-item ch-img-4" href="/docs/client/">
+                <div class="ch-info-wrap ch-info-wrap-4">
+                  <div class="ch-info">
+                    <div class="ch-info-front ch-img-4">
+                    </div>
+                  </div>
+                </div></a>
+              </li>
+            </ul>
+
+
+            <h4>Client WPS</h4>
+
+
+            <p class="int">Le <a href=
+            "http://zoo-project.org/docs/client/">ZOO-Client</a> est
+            une librairie cliente JavaScript permettant d'interragir
+            avec des serveurs WPS de façon extrêmement simple.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section data-background-transition="slide">
+        <h2>ZOO-Kernel</h2>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <ul class="ch-grid">
+            <li>
+              <a class="ch-item ch-img-1" href="#">
+              <div class="ch-info-wrap ch-info-wrap-1">
+              </div></a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-8 col-lg-8">
+	  <p class="int2">Le noyau ZOO impl&eacute;mente le WPS 1.0.0
+	  et 2.0, il fonctionne sur les plateformes GNU/Linux, MacOS X
+	  et Windows™. </p>
+
+
+          <p class="int2">Le noyau ZOO est en mesure de charger et
+          d'ex&eacute;cuter des services impl&eacute;ment&eacute;s
+          dans divers languages de programmation :
+          C/C++, Fortran, Java, PHP, Perl, Ruby, Python et JavaScript.</p>
+          <br>
+        </div>
+
+
+      </section>
+
+
+      <section data-background-transition="slide">
+      <section data-background-transition="slide">
+        <h2><span class="ch-info-wrap-s ch-info-wrap-1-s"></span> Fonctionnalit&eacute;s</h2>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>GetCapabilities &#160;&#160;</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>Describeprocess</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>Execute</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>CGI / FastCGI</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>GET / POST</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>SOAP</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>BoundingBoxData</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>LitteralData</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>ComplexData</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>ZCFG / YAML</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>W*S support</h4>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h4>GetStatus</h4>
+        </div>
+      </section>
+	<section data-background-transition="slide">
+	<h2>Publication de services Web OGC</h2>
+	<br />
+	<img src="../assets/img/mapserver.png" style="width:60px;height:60px;float:left"/>
+	<p class="big">Le support MapServer permet la publication
+          automatique de r&eacute;sultats via : WMS/WFS/WCS</p>
+	<img src="../assets/img/1000000000000AE00000057ED3C9F4F4.png" style="width:100%"/>
+	</section>
+	<section data-background-transition="slide">
+	<h2>Requêtes asynchrones</h2>
+	<br />
+	<big>GetStatus : informations relatives au status d'ex&eacute;cution.</big>
+	<br />
+	<img src="../assets/img/1000000000000ACC000005907AF7B14A.png" style="width:100%"/>
+	</section>
+
+      </section>
+
+
+      <section data-background-transition="slide">
+        <h2><span class="ch-info-wrap-s ch-info-wrap-1-s"></span>
+        Nouvaut&eacute;s de la 1.6.0</h2>
+        <br>
+
+
+        <h4>WPS 2.0.0 Support</h4>
+
+
+        <ul class="list-page">
+          <li>GetStatus, GetResult requests et l'extension Dismiss</li>
+          <li>Registre de profils de m&eacute;tadonn&eacute;es</li>
+        </ul>
+
+        <h4>ZOO-Kernel scalibilty</h4>
+
+        <ul class="list-page">
+          <li>Database backend</li>
+          <li>Possibilit&eacute; de load balancing</li>
+        </ul>
+
+
+        <h4>Documentation</h4>
+
+
+        <ul class="list-page">
+          <li>Documentation de l'API C du noyau ZOO</li>
+          <li>R&eacute;&eacute;criture de la documentation utilisateur</li>
+        </ul>
+      </section>
+
+
+      <section data-background-transition="slide">
+        <h2>Les Services ZOO</h2>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <ul class="ch-grid">
+            <li>
+              <a class="ch-item ch-img-2" href="#">
+              <div class="ch-info-wrap ch-info-wrap-2">
+              </div></a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-8 col-lg-8">
+          <p class="int2">Les services ZOO repr&eacute;sentent une
+          collection grandissante de services WPS prêts &agrave;
+          l'emploi et bas&eacute;s sur les librairies OpenSource les
+          plus maintenues comme par exemple GDAL.</p>
+
+
+          <p class="int2">Un service ZOO est un couple compos&eacute;
+          du code source (le frounisseur de service) et d'un fichier
+          de m&eacute;tadonn&eacute;es ZCFG (qui peut être
+          &eacute;crit en YAML) qui d&eacute;crit le service et les
+          entr&eacute;es et sorties possibles / obligatoires.</p>
+          <br>
+        </div>
+
+
+        <p class="page">Convertissez votre code en service WPS facilement.</p>
+	<div class="fragment">
+	<div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+<pre><code>
+ def HelloPy(conf,inputs,outputs):
+        outputs["Res"]["value"]="Hello "+inputs["a"]["value"]+" from Python"
+        return zoo.SERVICE_SUCCEEDED
+
+</code></pre>
+	</div>
+	</div>
+	<p class="fragment">
+	<img src="../assets/img/kiss-lips.jpg"
+	style="width:20%;position:absolute;opacity:0.3;right:-50px;margin-top:40px;"/>
+	<p>
+      </section>
+
+
+      <section data-background-transition="slide">
+        <h2><span class="ch-info-wrap-s ch-info-wrap-2-s"></span>Les
+        services disponibles</h2>
+        <br>
+
+
+        <p class="page" style="font-weight: bold">Plus de 500 services
+        WPS prêts &agrave; l'emploi</p>
+        <br>
+
+
+        <div class="row">
+          <div class="col-md-2 text-center">
+          <h4>GDAL</h4>
+          <img alt="GDAL" class="img-responsive img-circle center-block"
+          height="150" src="http://zoo-project.org/img/zoo-gdal.png" width=
+          "150">
+          </div>
+
+
+          <div class="col-md-2 text-center">
+          <h4>CGAL</h4>
+          <img alt="CGAL" class="img-responsive img-circle center-block"
+          height="150" src="http://zoo-project.org/img/zoo-cgal.png" width=
+          "150">
+          </div>
+
+          <div class="col-md-2 text-center">
+          <h4>GRASS</h4>
+          <img alt="GRASS GIS" class="img-responsive img-circle center-block"
+          height="150" src="http://zoo-project.org/img/zoo-grass.png" width=
+          "150">
+          </div>
+
+          <div class="col-md-2 text-center">
+          <h4>OTB</h4>
+          <img alt="Orfeo Toolbox" class=
+          "img-responsive img-circle center-block" height="150" src=
+          "http://zoo-project.org/img/zoo-orfeo.png" width="150">
+          </div>
+
+
+          <div class="col-md-2 text-center">
+          <h4>SAGA</h4>
+          <img alt="SAGA GIS" class="img-responsive img-circle center-block"
+          height="150" src="http://zoo-project.org/img/zoo-saga.png" width=
+          "150">
+          </div>
+
+
+          <div class="col-md-2 text-center">
+            <h3>&#160;<br></h3>
+
+
+            <div class="text-center mtp">
+              <h4>Qui sera le prochain ?</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section data-background-transition="slide">
+	<section>
+        <h2>La ZOO-API</h2>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <ul class="ch-grid">
+            <li>
+              <a class="ch-item ch-img-3" href="#">
+              <div class="ch-info-wrap ch-info-wrap-3">
+              </div></a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-8 col-lg-8">
+          <p class="int2">La ZOO-API est une librairie JavaScript
+          cot&eacute; serveur cr&eacute;&eacute;e pour simplifier la
+          cr&eacute;ation et le chaînage de services WPS.</p>
+
+          <p class="int2">Elle utilise Spider Monkey de Mozilla.</p>
+          <br>
+        </div>
+
+
+        <p class="page">Appelez et chaînez vos services WPS simplement.</p>
+	</section>
+	<section>
+	<h2>Exemple 1/2</h2>
+	<img src="../assets/img/1000000000000780000004384FFD362E.png" />
+	</section>
+	
+	<section>
+	<h2>Exemple 2/2</h2>
+	<img src="../assets/img/100000000000032000000190F30C3350.jpg" />
+	</section>
+
+      </section>
+
+
+      <section data-background-transition="slide">
+        <h2>Le ZOO-Client</h2>
+        <br>
+
+
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <ul class="ch-grid">
+            <li>
+              <a class="ch-item ch-img-4" href="#">
+              <div class="ch-info-wrap ch-info-wrap-4">
+              </div></a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-8 col-lg-8">
+          <p class="int2">Le ZOO-Client est une API javaScript
+          cot&eacute; client cette fois permettant d'interragir avec
+          des serveurs WPS depuis des applications web.</p>
+
+
+          <p class="int2">Le ZOO-Client utilise des librairies
+          JavaScript modernes et peut être int&eacute;gr&eacute;
+          tr&egrave;s facilement dans de nouvelles applications ou
+          dans des applications existantes.</p>
+
+
+          <p class="int2">Le ZOO-Client utilise des 
+          templates Mustache afin de cr&eacute;er les requêtes WPS</p>
+          <br>
+        </div>
+      </section>
+
+	
+	<section data-background-transition="slide">
+	<section>
+	<h2>Int&eacute;gration du ZOO-Client</h2>
+	<br/>
+	<img src="../assets/img/cap002.png" />
+	</section>
+	<section>
+	<h2>Exemple 1/5 (d&eacute;mo SAGA ZOO-Project)</h2>
+	<img src="../assets/img/ZOOSAGA.png" />
+	</section>
+	<section>
+	<h2>Exemple 2/5 (d&eacute;mo OTB ZOO-Project)</h2>
+	<img src="../assets/img/ZOOOTB.png" />
+	</section>
+	<section>
+	<h2>Exemple 3/5 (client MapMint 2.0)</h2>
+	<img src="../assets/img/MMUIC2.png" />
+	</section>
+	<section>
+	<h2>Exemple 4/5 (MapMint 2.0)</h2>
+	<img src="../assets/img/GeoRefMM2.png" />
+	</section>
+	<section>
+	<h2>Exemple 5/5 (MapMint 2.0 / Manager)</h2>
+	<img src="../assets/img/ManagerMM2.png" />
+	</section>
+
+	</section>
+
+<section data-background-transition="slide">
+<section>
+<h2>CKANEXT-WPS</h2>
+<h3>Ajouter le WPS aux catalogues Open Data</h3>
+<img src="../assets/img/cap003.png" width="650" />
+</section>
+<section>
+<h2>CKANEXT-WPS</h2>
+<center>
+<img src="../assets/img/cap004.png" width="400" />
+<table>
+    <tr>
+      <td>
+      <img src="../assets/img/cap005.png"
+	width="400" />
+      </td>
+      <td>
+	<img src="../assets/img/cap006.png"
+	width="400" />
+      </td>
+    </tr>
+  </table>
+</center>
+</section>
+</section>
+
+  <section data-background-transition="slide">
+<h2>QGIS plugin QgsWPSClient</h2>
+<img src="../assets/img/QGISClient.png" width="650" />
+<h4>http://geolabs.fr/plugins.xml</h4>
+</section>
+
+  <section data-background-transition="slide">
+  <h2>ZOO pour Windows</h2>
+  <br />
+  <img src="../assets/img/ZOO4W.png" width="350" />
+  <br />
+  <br />
+  <h4>ZOO-Project 1.6.0 maintenant disponible pour windows, merci
+  AppVeyor et BinTray!</h4>
+  </section>
+
+  <section data-background-transition="slide">
+  <h2>GSoC de l'OSGeo : 2 slots </h2>
+  <br />
+  <img src="../assets/img/GSoC1.png" width="650" />
+  <br />
+  <img src="../assets/img/GSoC2.png" width="650" />
+  <br />
+  </section>
+
+      <section data-background="#44cbc4" data-background-transition="slide"
+      data-transition="linear">
+        <h2><img height="232" src="../assets/img/logo-publicamundi-big.png" width="250">
+        </h2>
+        <img src="../assets/img/logo-publicamundi-text.png">
+
+        <p class="cs">FP7 project based on ZOO-Project, pycsw, rasdaman, GeoServer and
+        CKAN</p>
+      </section>
+
+
+      <section data-background="#83C848" data-background-transition="slide"
+      data-transition="linear">
+        <h2 class="mm">Map<span>Mint</span></h2>
+
+
+        <h3 class="fem">Le webmapping simple et facile</h3>
+        <img src="../assets/img/mapmint-logo.png">
+
+        <p class="cs">Un SIG dans votre navigateur et un
+        g&eacute;n&eacute;rateur d'applications SIG Web<br>
+        <a class="mml" href="http://mapmint.com" target=
+        "_blank">http://mapmint.com</a></p>
+  
+      </section>
+
+  <section data-background-transition="slide">
+  <h2>Venez &agrave; Bonn !</h2>
+  <br />
+  <img src="../assets/img/foss4g-logo.png" width="850" />
+  <br />
+  <br />
+  <h4>Workshop ZOO-Project et MapMint ansi que les
+  pr&eacute;sentations associ&eacute;es.</h4>
+  </section>
+
+      <section>
+        <h2>Questions ?</h2>
+
+	<br/>
+	<h3>Thanks for listening.</h3>
+	<br/>
+	<h3><b>ありがとうございました</b></h3>
+	<br/>
+	<h3>Merci de votre attention.</h3>
+	<br/>
+
+
+        <p class="auth brn"><b>Gérald FENOY</b> | <a href="http://geolabs.fr"
+        target="_blank">GeoLabs</a> | <a href="https://twitter.com/GeoLabsSARL"
+        target="_blank">@GeoLabsSARL</a></p>
+      </section>
+    </div>
+  </div>
+  <script src="../assets/lib/js/head.min.js"></script> <script src="../assets/js/reveal.min.js"></script> <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: '../assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../assets/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: '../assets/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+  </script>
+</body>
+</html>
