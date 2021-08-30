@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wps:ProcessOfferings xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:wps="http://www.opengis.net/wps/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
+  <wps:ProcessOffering processVersion="1.0.0" jobControlOptions="sync-execute async-execute dismiss" outputTransmission="value reference">
+    <wps:Process>
+      <ows:Title>Publish an image as WMS / WCS</ows:Title>
+      <ows:Abstract>Publish an image as WMS / WCS</ows:Abstract>
+      <ows:Identifier>publishTif</ows:Identifier>
+      <wps:Input minOccurs="1" maxOccurs="1">
+        <ows:Title>the string</ows:Title>
+        <ows:Abstract>The string to add to the hellow one.</ows:Abstract>
+        <ows:Identifier>S</ows:Identifier>
+        <wps:ComplexData>
+          <wps:Format default="true" mimeType="image/tiff"/>
+          <wps:Format mimeType="image/tiff"/>
+        </wps:ComplexData>
+      </wps:Input>
+      <wps:Output>
+        <ows:Title>The published file</ows:Title>
+        <ows:Abstract>The published file.</ows:Abstract>
+        <ows:Identifier>S</ows:Identifier>
+        <wps:Output>
+          <ows:Title>download link</ows:Title>
+          <ows:Abstract>download link</ows:Abstract>
+          <ows:Identifier>download</ows:Identifier>
+          <wps:ComplexData>
+            <wps:Format default="true" mimeType="image/tiff"/>
+            <wps:Format mimeType="image/tiff"/>
+          </wps:ComplexData>
+        </wps:Output>
+        <wps:Output>
+          <ows:Title>WCS link</ows:Title>
+          <ows:Abstract>WCS link</ows:Abstract>
+          <ows:Identifier>WCS_LINK</ows:Identifier>
+          <wps:ComplexData>
+            <wps:Format default="true" mimeType="image/tiff"/>
+            <wps:Format mimeType="image/tiff"/>
+          </wps:ComplexData>
+        </wps:Output>
+        <wps:Output>
+          <ows:Title>WMS link</ows:Title>
+          <ows:Abstract>WMS link</ows:Abstract>
+          <ows:Identifier>WMS_LINK</ows:Identifier>
+          <wps:ComplexData>
+            <wps:Format default="true" mimeType="image/png"/>
+            <wps:Format mimeType="image/png"/>
+          </wps:ComplexData>
+        </wps:Output>
+      </wps:Output>
+    </wps:Process>
+  </wps:ProcessOffering>
+</wps:ProcessOfferings>
